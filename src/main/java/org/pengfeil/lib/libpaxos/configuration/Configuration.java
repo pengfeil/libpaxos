@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class Configuration {
 	public static class Communication {
-		public static final long COMMUNICATE_TIMEOUT = 500;
+		public static final long COMMUNICATE_TIMEOUT = 15000;
 		public static final TimeUnit TIME_UNIT = TimeUnit.MILLISECONDS;
 	}
 }

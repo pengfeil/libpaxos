@@ -51,7 +51,7 @@ public abstract class AbstractAgent {
 		int size = endpoints.size();
 		int majoritySize = size / 2 + 1;
 		Endpoint[] majorityAcceptors = new Endpoint[majoritySize];
-		int startPoint = (int) System.currentTimeMillis() % size;
+		int startPoint = (int) (System.currentTimeMillis() % size);
 		for (int i = startPoint, count = 0; count < majoritySize; i++, count++) {
 			majorityAcceptors[count] = endpoints.get(i % size);
 		}

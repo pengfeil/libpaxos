@@ -6,7 +6,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import org.pengfeil.lib.libpaxos.io.model.Endpoint;
 import org.pengfeil.lib.libpaxos.io.model.Message;
 
-public class BlockingQueueChannel extends BlockingChannel {
+public class BlockingQueueChannel extends Channel implements IBlockingChannel {
 	private BlockingQueue<Message> messageQueue = new LinkedBlockingQueue<Message>();
 
 	public BlockingQueueChannel(Endpoint from, Endpoint to) {
